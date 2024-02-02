@@ -1,4 +1,4 @@
-import { test } from "../fixtures/fixture";
+import { test } from "../../fixtures/fixture";
 
 test('Open Elements Page', async ({elementsPage}) => {
     await elementsPage.openElementsPage();
