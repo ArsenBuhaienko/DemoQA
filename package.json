@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":         "playwright test --config=smoke_tests.config.ts",
+    "smoke":        "playwright test --config=smoke_tests.config.ts",
     "crossbrowser": "playwright test --config=crossbrowser_tests.config.ts"
   },
   "keywords": [],
