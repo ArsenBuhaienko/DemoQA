@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "smoke":        "playwright test --config=smoke_tests.config.ts",
+    "crossbrowser": "playwright test --config=crossbrowser_tests.config.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

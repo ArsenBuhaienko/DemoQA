@@ -1,25 +1,25 @@
-import { BrowserContext, test as baseTest } from "@playwright/test";
-import { MainPage } from "../page-object/MainPage";
-import { ElementsPage } from "../page-object/ElementsPage";
-import { AlertsPage } from "../page-object/AlertsPage";
-import { BooksApplicationsPage } from "../page-object/BooksApplicationsPage";
-import { FormsPage } from "../page-object/FormsPage";
-import { InteractionsPage } from "../page-object/InteractionsPage";
-import { WidgetsPage } from "../page-object/WidgetsPage";
-import { chromium } from "@playwright/test";
-import { Page } from "@playwright/test";
+import { BrowserContext, test as baseTest } from    "@playwright/test";
+import { MainPage } from                            "../page-object/MainPage";
+import { ElementsPage } from                        "../page-object/ElementsPage";
+import { AlertsPage } from                          "../page-object/AlertsPage";
+import { BooksApplicationsPage } from               "../page-object/BooksApplicationsPage";
+import { FormsPage } from                           "../page-object/FormsPage";
+import { InteractionsPage } from                    "../page-object/InteractionsPage";
+import { WidgetsPage } from                         "../page-object/WidgetsPage";
+import { chromium } from                            "@playwright/test";
+import { Page } from                                "@playwright/test";
 
 type basePage = {
-    mainPage: MainPage
-    alertPage: AlertsPage
-    bookApplicationsPage: BooksApplicationsPage
-    elementsPage: ElementsPage
-    formsPage: FormsPage
-    interactionsPage: InteractionsPage
-    widgetsPage: WidgetsPage
+    mainPage:                   MainPage
+    alertPage:                  AlertsPage
+    bookApplicationsPage:       BooksApplicationsPage
+    elementsPage:               ElementsPage
+    formsPage:                  FormsPage
+    interactionsPage:           InteractionsPage
+    widgetsPage:                WidgetsPage
 
-    browserContext: BrowserContext
-    page: Page
+    browserContext:             BrowserContext
+    page:                       Page
 }
 
 export const test = baseTest.extend<basePage>({
